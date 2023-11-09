@@ -15,7 +15,7 @@ header = lines[1].split("|").map(&:strip)
 data_rows = lines[3..]
 
 # ②csv_fileを任意のファイル名に書き換える。
-csv_file = "convert_sql_execution_results_to.csv"
+csv_file = "example.csv"
 CSV.open(csv_file, "w", write_headers: true, headers: header) do |csv|
   data_rows.each do |row|
     values = row.split("|").map(&:strip)
