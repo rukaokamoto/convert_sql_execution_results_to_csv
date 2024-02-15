@@ -1,14 +1,10 @@
 SQLの出力結果をCSVに変換するプログラムです。
+* 第一引数
+  * SQL結果を出力したファイル
+* 第二引数
+  * ファイル名
 
-
-# 使用方法
-2つの変数を書き換えるだけで使用できます。
-
-- [ ] **data** にsql出力結果を貼り付ける。
-- [ ] **csv_file** を任意のファイル名に書き換える。
-
-書き換えた後にプログラムを実行します。
-
+# プログラム実行
 ```
-ruby convert_sql_execution_results_to_csv
+ruby convert_sql_execution_results_to_csv.rb file file_name.csv
 ```
