@@ -6,5 +6,5 @@ SQLの出力結果をCSVに変換するプログラムです。
 
 # プログラム実行
 ```
-ruby convert_sql_execution_results_to_csv.rb file file_name.csv
+ruby convert_sql_execution_results_to_csv.rb input/file output/file_name.csv
 ```
