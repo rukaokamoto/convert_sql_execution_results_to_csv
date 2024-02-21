@@ -15,7 +15,7 @@ data_rows = lines[1..]
 
 CSV.open(file_name, "w", write_headers: true, headers: header) do |csv|
   data_rows.each do |row|
-    values = row.split(" ").map(&:strip)
+    values = row.split("\t").map(&:strip)
     
     # 16進数エンコードされた文字列をデコードして正しい値に変換
     decoded_values = values.map.with_index do |value, index|
